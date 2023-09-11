@@ -9,11 +9,12 @@ class PostController extends Controller
 {
     public function index()
     {
+
         $data = [
             "title" => "All Posts",
             "active" => "posts",
             // "posts" => Post::all()
-            "posts" => Post::latest()->get()
+            "posts" => Post::latest()->filter(request(['keyword','category']))->get()
         ];
 
         return view('posts', $data);

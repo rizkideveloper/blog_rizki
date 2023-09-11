@@ -34,7 +34,7 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/blog', [PostController::class, 'index']);
+Route::get('/posts', [PostController::class, 'index']);
 
 //halaman single post
 // {post:slug} mengambil data dari tabel post berdasarkan slug
