@@ -15,7 +15,7 @@ class Post extends Model
     //protected $fillable=['title','excerpt','body'];
 
     //tidak boleh diisi, selain itu boleh
-    protected $guarded = ['id'];
+    protected $guarded = ['id']; 
     protected $with = ['author', 'category'];
 
     // penamaan func harus diawali dengan scope

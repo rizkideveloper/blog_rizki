@@ -20,36 +20,31 @@ class DatabaseSeeder extends Seeder
         
 
         // User::create([
-        //     'name' => 'Moch Rizki Maulana N',
-        //     'email' => 'mochrizki290699@gmail.com',
-        //     'password' => bcrypt('12345'),
+        //     'name' => 'Rizki Maulana',
+        //     'username' => 'rizkimaulana',
+        //     'email' => 'rizki@gmail.com',
+        //     'password' => bcrypt('password'),
+        //     'is_admin' => 1
         // ]);
 
-        User::create([
-            'name' => 'Rizki Maulana',
-            'username' => 'rizkimaulana',
-            'email' => 'mochrizki290699@gmail.com',
-            'password' => bcrypt('password'),
-        ]);
+        // User::factory(3)->create();
 
-        User::factory(3)->create();
+        // Category::create([
+        //     'name' => 'Web Programming',
+        //     'slug' => 'web-programming',
+        // ]);
 
-        Category::create([
-            'name' => 'Web Programming',
-            'slug' => 'web-programming',
-        ]);
+        // Category::create([
+        //     'name' => 'Web Design',
+        //     'slug' => 'web-design',
+        // ]);
 
-        Category::create([
-            'name' => 'Web Design',
-            'slug' => 'web-design',
-        ]);
+        // Category::create([
+        //     'name' => 'Personal',
+        //     'slug' => 'personal',
+        // ]);
 
-        Category::create([
-            'name' => 'Personal',
-            'slug' => 'personal',
-        ]);
-
-        Post::factory(20)->create();
+        Post::factory(100)->create();
 
         // Post::create([
         //     'title' => 'Judul Pertama',

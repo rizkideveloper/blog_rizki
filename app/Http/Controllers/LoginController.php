@@ -20,12 +20,12 @@ class LoginController extends Controller
 
     public function authenticate(Request $request)
     {
-        $credentials = $request->validate([
+        $rules = $request->validate([
             'email' => 'required|email',
             'password' => 'required',
         ]);
 
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($rules)) {
             $request->session()->regenerate();
 
             return redirect()->intended('/dashboard');

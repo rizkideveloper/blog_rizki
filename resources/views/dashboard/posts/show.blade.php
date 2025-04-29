@@ -13,7 +13,7 @@
                 <form action="/dashboard/posts/{{ $post->slug }}" method="post" class="d-inline">
                     @method('delete')
                     @csrf
-                    <button class="btn btn-danger" onclick="return confirm('Are you sure?')"><span
+                    <button class="btn btn-danger" style="border: none" onclick="return confirm('Are you sure?')"><span
                             data-feather="trash"></span> Delete</button>
                 </form>
 

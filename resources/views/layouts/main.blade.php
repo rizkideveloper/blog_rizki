@@ -16,7 +16,7 @@
     {{-- My styles --}}
     <link rel="stylesheet" href="/css/style.css">
 
-    <title>WPU Blog | {{ $title }}</title>
+    <title>Blog Rizki | {{ $title }}</title>
 </head>
 
 <body>

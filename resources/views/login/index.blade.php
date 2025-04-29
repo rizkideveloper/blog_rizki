@@ -18,6 +18,10 @@
             @endif
             <main class="form-signin w-100 m-auto">
                 <h1 class="h3 mb-3 fw-normal text-center">Please login</h1>
+                <p>Admin<br>
+                email : rizki@gmail.com<br>
+                pass : password
+                </p>
                 <form action="/login" method="POST">
                     @csrf
                     <div class="form-floating">
